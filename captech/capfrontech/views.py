@@ -1,6 +1,7 @@
 from rest_framework import generics
 from .serializers import *
 from .models import *
+from django.http import HttpResponse
 
 # Create your views here.
 class CreateView(generics.ListCreateAPIView):
@@ -12,6 +13,8 @@ class CreateView(generics.ListCreateAPIView):
         """Save the post data when creating a new employees."""
         serializer.save()
 
+    def CreateView(request):
+        return HttpResponse("captech/populate.py")
 
 
 class CreateViews(generics.ListCreateAPIView):
