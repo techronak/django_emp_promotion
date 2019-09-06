@@ -18,7 +18,7 @@ class employees(models.Model):
     groups = models.ManyToManyField('Titles')
 
     def __str__(self):
-        return self.first_name
+        return "{}".format(self.first_name)
 
 
 class departments(models.Model):
