@@ -26,4 +26,4 @@ Create First model
 8. 'Research'
 9. 'Sales'
 
-# Note : Attached Prerequisties in Requirements.txt
+Note : Attached Prerequisties in Requirements.txt
