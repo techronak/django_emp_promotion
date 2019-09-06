@@ -2,6 +2,8 @@ from rest_framework import generics
 from .serializers import *
 from .models import *
 from django.http import HttpResponse
+from populate_captech import  *
+
 
 # Create your views here.
 class CreateView(generics.ListCreateAPIView):
