@@ -36,3 +36,16 @@ Commands:
 3. python manage.py makemigrations
 4. python manage.py migrate
 
+
+
+Admin panel :
+
+username : admin
+password: admin123
+
+Check Url:
+
+Note : http://127.0.0.1:8000/employee_hire/
+
+you will get employee data.
+
