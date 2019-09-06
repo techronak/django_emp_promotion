@@ -27,3 +27,12 @@ Create First model
 9. 'Sales'
 
 Note : Attached Prerequisties in Requirements.txt
+
+
+Commands:
+
+1. Python manage.py runserver
+2. python manage.py createsuperuser
+3. python manage.py makemigrations
+4. python manage.py migrate
+
