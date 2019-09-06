@@ -1,51 +1,67 @@
-# django_emp_promotion
+# Task 1
 
-Create First model
+###Created Porject and app:
+####perquisites:
 
-#1 employees 
-#2 departments
-#3 dept_emp 
-#4 titles
-#5 salaries
+* django-admin startproject captech
+* django-admin startapp capfrontech
+* pip install Django==2.2.1
+* pip install  djangorestframework==3.10.2
+* pip install  mysqlclient==1.4.4*
+* mysql workbentch 
+* configuration capfrontech application with captech project.
 
-#2. Nested serilizers used 
+#### Using databse
+* mysql database
 
-#3. Insered data from serilizers 
+#### Task 1 databases
 
-#4. Created admin panel
+created database in models representing databases and
+using by makemigrations and  Migrate Models datanase:
 
-#5. Inserted departments
+* python manage.py makemigrations
+* python manage.py migrate
 
-1. Customer Service'
-2. 'Development' 
-3. 'Finance'
-4. 'Human Resources' 
-5. 'Marketing'
-6. 'Production'
-7. 'Quality Management' 
-8. 'Research'
-9. 'Sales'
+[0001: employees],
+[0002: departments],
+[0003: dept_emp],
+[0004: Titles],
+[0005: Salaries],
 
-Note : Attached Prerequisties in Requirements.txt
+Serializers: They're used to convert the data sent in a HTTP request to a Django object and a Django object to a valid response data.
 
+Now, here we can nested two types: First is used nested serializer and second is entring by using admin panel.
 
-Commands:
+### Nested Serializer Example:
 
-1. Python manage.py runserver
-2. python manage.py createsuperuser
-3. python manage.py makemigrations
-4. python manage.py migrate
+we can see in **employee_hireSerializer**  how can i nested models in Serializer.
+and we can go also django admin panel:
 
-
-
-Admin panel :
-
-username : admin
+Username: admin
 password: admin123
 
-Check Url:
+we can put our values.
 
-Note : http://127.0.0.1:8000/employee_hire/
+Now redirect our response in Post Api.
 
-you will get employee data.
+#### we are using genric view It will create redirect our api on post.
 
+import module: from rest_framework import generics
+
+** Insert 1000 + employee data 
+
+Insert data used inside populate_capfrontech.py 
+
+#### Fake library
+
+### Run:
+
+python: populate_capfrontech.py 
+
+
+
+Task 2: insert and populate data.
+
+
+
+ 
